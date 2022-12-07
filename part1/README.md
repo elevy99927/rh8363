@@ -64,32 +64,41 @@ kubectl ...
     8. Create a static pod named static-busybox on the master node that uses the busybox image and the command sleep 1000
         a. Name: static-busybox
         b. Image: busybox
+
 `
 kubectl ...
 `
+
     9. Create a POD in the finance-yourname namespace named temp-bus with the image redis:alpine
         a. Name: temp-bus
         b. Image Name: redis:alpine
+
 `
 kubectl ...
 `
+
     10. Create a Persistent Volume with the given specification
         a. Volume Name: pv-analytics
         b. Storage: 100Mi
         c. Access modes: ReadWriteMany
         d. Host Path: /pv/data-analytics
+
 `
 kubectl ...
 `
+
     11. Create a Pod called redis-storage-yourname with image: redis:alpine with a Volume of type emptyDir that lasts for the life of the Pod. specs:.
         a. Pod named 'redis-storage-yourname' 
         b. Pod 'redis-storage-yourname' uses Volume type of emptyDir
         c. Pod 'redis-storage-yourname' uses volumeMount with mountPath = /data/redis
+
 `
 kubectl ...
 `
+
     12. Create this pod and attached it a persistent volume called pv-1
         a. Make sure the PV mountPath is hostbase : /data
+
 ```
 apiVersion: v1
 kind: Pod
