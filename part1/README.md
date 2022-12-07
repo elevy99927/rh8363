@@ -120,8 +120,12 @@ status: {}
 `
 amswer-12.yaml
 `
+<<<<<<< HEAD
 
 13. Create a new deployment called nginx-deploy, with image nginx:1.16 and 1 replica. 
+=======
+    13. Create a new deployment called nginx-deploy, with image nginx:1.16 and 1 replica. 
+>>>>>>> parent of 9985019 (answer example)
 	Record the version. 
 	Next upgrade the deployment to version 1.17 using rolling update. 
 	Make sure that the version upgrade is recorded in the resource annotation.
@@ -134,20 +138,27 @@ amswer-12.yaml
 answer13.yaml
 kubectl ...
 `
+<<<<<<< HEAD
 
 14. Create an nginx pod called nginx-resolver using image nginx, 
+=======
+    14. Create an nginx pod called nginx-resolver using image nginx, 
+>>>>>>> parent of 9985019 (answer example)
 	expose it internally with a service called nginx-resolver-service. 
 	Test that you are able to look up the service and pod names from within the cluster. 
 	Use the image: busybox:1.28 for dns lookup. 
 	Record results in /root/nginx-yourname.svc and /root/nginx-yourname.pod
-
 `
 kubectl or YAML file
 nginx-yourname.svc
 nginx-yourname.pod
 `
+<<<<<<< HEAD
 
 15. Create a static pod on node01 called nginx-critical with image nginx. 
+=======
+    15. Create a static pod on node01 called nginx-critical with image nginx. 
+>>>>>>> parent of 9985019 (answer example)
 	Create this pod on node01 and make sure that it is recreated/restarted automatically in case of a failure.
 
 `
