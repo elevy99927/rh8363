@@ -87,7 +87,8 @@ kubectl ...
 kubectl ...
 `
 
-    11. Create a Pod called redis-storage-yourname with image: redis:alpine with a Volume of type emptyDir that lasts for the life of the Pod. specs:.
+    11. Create a Pod called redis-storage-yourname with image: redis:alpine 
+	with a Volume of type emptyDir that lasts for the life of the Pod. specs:.
         a. Pod named 'redis-storage-yourname' 
         b. Pod 'redis-storage-yourname' uses Volume type of emptyDir
         c. Pod 'redis-storage-yourname' uses volumeMount with mountPath = /data/redis
@@ -142,15 +143,26 @@ kubectl or YAML file
 nginx-yourname.svc
 nginx-yourname.pod
 `
-    15. Create a static pod on node01 called nginx-critical with image nginx. Create this pod on node01 and make sure that it is recreated/restarted automatically in case of a failure.
+    15. Create a static pod on node01 called nginx-critical with image nginx. 
+	Create this pod on node01 and make sure that it is recreated/restarted automatically in case of a failure.
+
+`
+answer-15.yaml
+`
+
 
     16. Create a pod called multi-pod with two containers.
-Container 1, name: alpha, image: nginx
-Container 2: beta, image: busybox, command sleep 4800.
+	Container 1, name: alpha, image: nginx
+	Container 2: beta, image: busybox, command sleep 4800.
         a. Environment Variables:
             i. container 1:
             ii. name: alpha
 
             iii. Container 2:
             iv. name: beta
+
+
+`
+answer-16.yaml
+`
 
