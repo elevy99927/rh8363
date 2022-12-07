@@ -1,4 +1,5 @@
-```Please make sure to write the commands you are writing as a separate document and send all of your solutions to a repository that you own.
+```
+Please make sure to write the commands you are writing as a separate document and send all of your solutions to a repository that you own.
 Please send me the repo - make sure it’s public.
 ```
 
@@ -6,6 +7,7 @@ Please send me the repo - make sure it’s public.
     1. Deploy a pod named nginx-pod using the nginx:alpine image.
 Name: nginx-pod-yourname
 Image: nginx:alpine
+
 `
 kubectl ...
 `
@@ -14,16 +16,19 @@ kubectl ...
 Pod Name: messaging
 Image: redis:alpine
 Labels: tier=msg
+
 `
 kubectl ...
 `
 
     3. Create a namespace named apx-x998-yourname
+
 `
 kubectl ...
 `
 
     4. Get the list of nodes in JSON format and store it in a file at /tmp/nodes-yourname
+
 `
 kubectl ...
 `
