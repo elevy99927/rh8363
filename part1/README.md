@@ -5,7 +5,7 @@ Please send me the repo - make sure it’s public.
 ```
 
 # Part 1
-    1. Deploy a pod named nginx-pod using the nginx:alpine image.
+1. Deploy a pod named nginx-pod using the `nginx:alpine` image.
 Name: nginx-pod-yourname
 Image: nginx:alpine
 
@@ -13,7 +13,7 @@ Image: nginx:alpine
 kubectl ...
 `
 
-    2. Deploy a messaging pod using the redis:alpine image with the labels set to tier=msg.
+2. Deploy a messaging pod using the `redis:alpine` image with the labels set to `tier=msg`.
 Pod Name: messaging
 Image: redis:alpine
 Labels: tier=msg
@@ -22,19 +22,19 @@ Labels: tier=msg
 kubectl ...
 `
 
-    3. Create a namespace named apx-x998-yourname
+3. Create a namespace named `apx-x998-yourname`
 
 `
 kubectl ...
 `
 
-    4. Get the list of nodes in JSON format and store it in a file at /tmp/nodes-yourname
+4. Get the list of nodes in JSON format and store it in a file at /tmp/nodes-yourname
 
 `
 kubectl ...
 `
 
-    5. Create a service messaging-service to expose the messaging application within the cluster on port 6379.
+5. Create a service messaging-service to expose the messaging application within the cluster on port 6379.
         a. Use imperative commands - kubectl
         b. Service: messaging-service
         c. Port: 6379
@@ -44,7 +44,7 @@ kubectl ...
 kubectl ...
 `
 
-    6. Create a service messaging-service to expose the messaging application within the cluster on port 6379.
+6. Create a service messaging-service to expose the messaging application within the cluster on port 6379.
         a. Service: messaging-service
         b. Port: 6379
         c. Type: ClusterIp
@@ -53,7 +53,7 @@ kubectl ...
 kubectl ...
 `
 
-    7. Create a deployment named hr-web-app using the image kodekloud/webapp-color with 2 replicas
+7. Create a deployment named hr-web-app using the image kodekloud/webapp-color with 2 replicas
         a. Name: hr-web-app
         b. Image: kodekloud/webapp-color
         c. Replicas: 2
@@ -61,7 +61,7 @@ kubectl ...
 kubectl ...
 `
 
-    8. Create a static pod named static-busybox on the master node that uses the busybox image and the command sleep 1000
+8. Create a static pod named static-busybox on the master node that uses the busybox image and the command sleep 1000
         a. Name: static-busybox
         b. Image: busybox
 
@@ -69,7 +69,7 @@ kubectl ...
 kubectl ...
 `
 
-    9. Create a POD in the finance-yourname namespace named temp-bus with the image redis:alpine
+9. Create a POD in the finance-yourname namespace named temp-bus with the image redis:alpine
         a. Name: temp-bus
         b. Image Name: redis:alpine
 
@@ -77,7 +77,7 @@ kubectl ...
 kubectl ...
 `
 
-    10. Create a Persistent Volume with the given specification
+10. Create a Persistent Volume with the given specification
         a. Volume Name: pv-analytics
         b. Storage: 100Mi
         c. Access modes: ReadWriteMany
@@ -87,7 +87,7 @@ kubectl ...
 kubectl ...
 `
 
-    11. Create a Pod called redis-storage-yourname with image: redis:alpine 
+11. Create a Pod called redis-storage-yourname with image: redis:alpine 
 	with a Volume of type emptyDir that lasts for the life of the Pod. specs:.
         a. Pod named 'redis-storage-yourname' 
         b. Pod 'redis-storage-yourname' uses Volume type of emptyDir
@@ -97,7 +97,7 @@ kubectl ...
 kubectl ...
 `
 
-    12. Create this pod and attached it a persistent volume called pv-1
+12. Create this pod and attached it a persistent volume called pv-1
         a. Make sure the PV mountPath is hostbase : /data
 
 ```
@@ -121,7 +121,7 @@ status: {}
 amswer-12.yaml
 `
 
-    13. Create a new deployment called nginx-deploy, with image nginx:1.16 and 1 replica. 
+13. Create a new deployment called nginx-deploy, with image nginx:1.16 and 1 replica. 
 	Record the version. 
 	Next upgrade the deployment to version 1.17 using rolling update. 
 	Make sure that the version upgrade is recorded in the resource annotation.
@@ -135,7 +135,7 @@ answer13.yaml
 kubectl ...
 `
 
-    14. Create an nginx pod called nginx-resolver using image nginx, 
+14. Create an nginx pod called nginx-resolver using image nginx, 
 	expose it internally with a service called nginx-resolver-service. 
 	Test that you are able to look up the service and pod names from within the cluster. 
 	Use the image: busybox:1.28 for dns lookup. 
@@ -147,7 +147,7 @@ nginx-yourname.svc
 nginx-yourname.pod
 `
 
-    15. Create a static pod on node01 called nginx-critical with image nginx. 
+15. Create a static pod on node01 called nginx-critical with image nginx. 
 	Create this pod on node01 and make sure that it is recreated/restarted automatically in case of a failure.
 
 `
@@ -155,7 +155,7 @@ answer-15.yaml
 `
 
 
-    16. Create a pod called multi-pod with two containers.
+16. Create a pod called multi-pod with two containers.
 	Container 1, name: alpha, image: nginx
 	Container 2: beta, image: busybox, command sleep 4800.
         a. Environment Variables:
