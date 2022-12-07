@@ -121,9 +121,12 @@ status: {}
 amswer-12.yaml
 `
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 13. Create a new deployment called nginx-deploy, with image nginx:1.16 and 1 replica. 
 =======
+=======
+>>>>>>> parent of 9985019 (answer example)
     13. Create a new deployment called nginx-deploy, with image nginx:1.16 and 1 replica. 
 >>>>>>> parent of 9985019 (answer example)
 	Record the version. 
@@ -139,9 +142,12 @@ answer13.yaml
 kubectl ...
 `
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 14. Create an nginx pod called nginx-resolver using image nginx, 
 =======
+=======
+>>>>>>> parent of 9985019 (answer example)
     14. Create an nginx pod called nginx-resolver using image nginx, 
 >>>>>>> parent of 9985019 (answer example)
 	expose it internally with a service called nginx-resolver-service. 
@@ -154,9 +160,12 @@ nginx-yourname.svc
 nginx-yourname.pod
 `
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 15. Create a static pod on node01 called nginx-critical with image nginx. 
 =======
+=======
+>>>>>>> parent of 9985019 (answer example)
     15. Create a static pod on node01 called nginx-critical with image nginx. 
 >>>>>>> parent of 9985019 (answer example)
 	Create this pod on node01 and make sure that it is recreated/restarted automatically in case of a failure.
