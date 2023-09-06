@@ -129,13 +129,13 @@ amswer-12.yaml
 >>>>>>> parent of 9985019 (answer example)
     13. Create a new deployment called nginx-deploy, with image nginx:1.16 and 1 replica. 
 >>>>>>> parent of 9985019 (answer example)
-	Record the version. 
-	Next upgrade the deployment to version 1.17 using rolling update. 
-	Make sure that the version upgrade is recorded in the resource annotation.
-        a. Deployment : nginx-deploy. Image: nginx:1.16
-        b. Image: nginx:1.16
-        c. Task: Upgrade the version of the deployment to 1:17
-        d. Task: Record the changes for the image upgrade
+<BR>	Record the version. 
+<BR>	Next upgrade the deployment to version 1.17 using rolling update. 
+<BR>	Make sure that the version upgrade is recorded in the resource annotation.
+<BR>        a. Deployment : nginx-deploy. Image: nginx:1.16
+<BR>        b. Image: nginx:1.16
+<BR>        c. Task: Upgrade the version of the deployment to 1:17
+<BR>        d. Task: Record the changes for the image upgrade
 
 `
 answer13.yaml
